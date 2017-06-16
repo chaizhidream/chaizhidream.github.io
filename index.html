@@ -94,7 +94,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Java基础02"><a href="#Java基础02" class="headerlink" title="Java基础02"></a>Java基础02</h1><h2 id="必做题"><a href="#必做题" class="headerlink" title="必做题"></a>必做题</h2><ol>
+        <h2 id="必做题"><a href="#必做题" class="headerlink" title="必做题"></a>必做题</h2><ol>
 <li><p>下列哪些变量名是合法的？Ab?1, @abc , lname, _int, $25, private, ab*5, #abc<br>答：lname;_int</p>
 </li>
 <li><p>写出以下表达式的值：  </p>
@@ -183,7 +183,7 @@ f = b &amp; c;
     System.out.println(e7);
     System.out.println(f7);
 }
-</code></pre><p>结果为：<br>    第一题的结果为：0<br>    第二题的结果为：Infinity<br>    第三题的结果为：2.5<br>    第四题的结果为：46<br>    第五题的结果为：8<br>    第六题的结果为：20<br>    第七题的结果为：<br>       0<br>       12345<br>       12345</p>
+</code></pre><p>结果为：<br>    第一题的结果为：0<br>    第二题的结果为：Infinity<br>    第三题的结果为：2.5<br>    第四题的结果为：46<br>    第五题的结果为：8<br>    第六题的结果为：20<br>    第七题的结果为：0<br>                  12345<br>                  12345</p>
 <p>3． 写出以下程序的运行结果：（知识点：数据类型及分类、数据类型的转换）</p>
 <pre><code>public class Test {
 public static void main (String args[]) {
@@ -213,10 +213,12 @@ System.out.println((f – 32.0) * 5 / 9);
 <pre><code>double c ; // 摄氏温度
 System.out.println(c * 9.0 / 5 + 32);
 </code></pre><p>6.已知 a,b 均是整型变量，写出将 a,b 两个变量中的值互换的程序。</p>
-<pre><code>a=a+b; 
+<pre><code>public static void swap (int a,int b) {
+a=a+b; 
 b=a-b; 
 a=a-b; 
 //不借助temp变量完成交换
+ }
 </code></pre><h2 id="选做题"><a href="#选做题" class="headerlink" title="选做题"></a>选做题</h2><ol>
 <li><p>说出以下方法实现什么功能：（知识点：三元运算符用法）</p>
 <pre><code>public static double myFuction(double a, double b, double c) {
@@ -230,8 +232,15 @@ a=a-b;
 <p>求三个数中的最小值。</p>
 <ol>
 <li><p>假设 a,n 为任意整数（0<n<10），编写一个程序，分别求出表达式 2="" a="" <<n,="" *="" 的="" n="" 次方，a="">&gt; n 以及 a / 2 的 n 次方的值，a, n 都是命令行参数。</n<10），编写一个程序，分别求出表达式></p>
-<p> int a = Integer.parseInt(args[0]);<br> int n = Integer.parseInt(args[1]);<br> System.out.println(a);<br> System.out.println(n);<br> System.out.println(a &lt;<n );="" system.out.println(a*(int)="" math.pow(2.0,="" (double)="" n)="" system.out.println(a="">&gt;n );<br> System.out.println(a/(int) Math.pow(2.0, (double) n) );</n></p>
-</li>
+<pre><code>int a = Integer.parseInt(args[0]);
+int n = Integer.parseInt(args[1]);
+System.out.println(a);
+System.out.println(n);
+System.out.println(a &lt;&lt;n );
+System.out.println(a*(int) Math.pow(2.0, (double) n) );
+System.out.println(a &gt;&gt;n );
+System.out.println(a/(int) Math.pow(2.0, (double) n) );
+</code></pre></li>
 <li><p>输入一个任意的 5 位整数，将它保留到百位，无需四舍五入   </p>
 <pre><code>Scanner sc = new Scanner(System.in);
 int i = sc.nextInt();
@@ -294,7 +303,7 @@ System.out.println((char) (i + 32) );
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Java基础01"><a href="#Java基础01" class="headerlink" title="Java基础01"></a>Java基础01</h1><ol>
+        <ol>
 <li><p>如果 DOS 命令输入：java&gt;HelloJava 出现以下结果：Bad command or file name 可能是什么原因？（知识点：Java 开发环境配置）<br>答：&#8195;命令或文件名错，路径出错。（错误的命令或文件名） 输入的命令不存在，或者不在指定的路径中。 确保键入了正确的命令、在正确的位置留出了空格和使用了正确的路径名。</p>
 </li>
 <li><p>如果上题中的命令出现以下结果： Exception in thread “main” java.lang.NoClass DefFoundError: HelloJava 可能是什么原因？（知识点：Java 开发环境配置）<br>答：&#8195;类名要和JAVA文件同名；是否window自动隐藏了文件后缀名，不要隐藏后缀名，把文件后缀改为.JAVA；是否import 你需要的包名；JAVA的环境变量是否设置正确。</p>
