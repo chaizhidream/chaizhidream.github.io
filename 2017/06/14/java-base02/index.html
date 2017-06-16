@@ -5,17 +5,17 @@
   
   <title>java_base02 | 柴智的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Java基础02必做题 下列哪些变量名是合法的？Ab?1, @abc , lname, _int, $25, private, ab*5, #abc答：lname;_int  写出以下表达式的值：   int a = 2, b = 3, c;c = a / b * 8;    float a = 3.0F, b;b = a / 0;  double a = 3.0, k;int b = 3, c">
+  <meta name="description" content="Java基础02必做题 下列哪些变量名是合法的？Ab?1, @abc , lname, _int, $25, private, ab*5, #abc答：lname;_int  写出以下表达式的值：      int a = 2, b = 3, c;c = a / b * 8;  float a = 3.0F, b;b = a / 0;  double a = 3.0, k;int b = 3, c">
 <meta name="keywords" content="java">
 <meta property="og:type" content="article">
 <meta property="og:title" content="java_base02">
 <meta property="og:url" content="http://chaizhidream.github.io/2017/06/14/java-base02/index.html">
 <meta property="og:site_name" content="柴智的个人博客">
-<meta property="og:description" content="Java基础02必做题 下列哪些变量名是合法的？Ab?1, @abc , lname, _int, $25, private, ab*5, #abc答：lname;_int  写出以下表达式的值：   int a = 2, b = 3, c;c = a / b * 8;    float a = 3.0F, b;b = a / 0;  double a = 3.0, k;int b = 3, c">
-<meta property="og:updated_time" content="2017-06-14T07:59:34.577Z">
+<meta property="og:description" content="Java基础02必做题 下列哪些变量名是合法的？Ab?1, @abc , lname, _int, $25, private, ab*5, #abc答：lname;_int  写出以下表达式的值：      int a = 2, b = 3, c;c = a / b * 8;  float a = 3.0F, b;b = a / 0;  double a = 3.0, k;int b = 3, c">
+<meta property="og:updated_time" content="2017-06-16T05:37:02.332Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java_base02">
-<meta name="twitter:description" content="Java基础02必做题 下列哪些变量名是合法的？Ab?1, @abc , lname, _int, $25, private, ab*5, #abc答：lname;_int  写出以下表达式的值：   int a = 2, b = 3, c;c = a / b * 8;    float a = 3.0F, b;b = a / 0;  double a = 3.0, k;int b = 3, c">
+<meta name="twitter:description" content="Java基础02必做题 下列哪些变量名是合法的？Ab?1, @abc , lname, _int, $25, private, ab*5, #abc答：lname;_int  写出以下表达式的值：      int a = 2, b = 3, c;c = a / b * 8;  float a = 3.0F, b;b = a / 0;  double a = 3.0, k;int b = 3, c">
   
     <link rel="alternate" href="/atom.xml" title="柴智的个人博客" type="application/atom+xml">
   
@@ -98,10 +98,11 @@
 <li><p>下列哪些变量名是合法的？Ab?1, @abc , lname, _int, $25, private, ab*5, #abc<br>答：lname;_int</p>
 </li>
 <li><p>写出以下表达式的值：  </p>
-<pre><code>int a = 2, b = 3, c;c = a / b * 8;
-</code></pre></li>
+</li>
 </ol>
 <hr>
+<pre><code>int a = 2, b = 3, c;c = a / b * 8;
+</code></pre><hr>
 <pre><code>float a = 3.0F, b;b = a / 0;
 </code></pre><hr>
 <pre><code>double a = 3.0, k;int b = 3, c = 2;k = a / c + b / c;
@@ -119,7 +120,7 @@ d = a &amp; b;
 e = a | b;
 f = b &amp; c;
 </code></pre><p>运行代码为：</p>
-<pre><code>  public static void main(String[] args) {
+<pre><code>    public static void main(String[] args) {
 
 {
     System.out.println(&quot;第一题的结果为：&quot;);
@@ -182,16 +183,7 @@ f = b &amp; c;
     System.out.println(e7);
     System.out.println(f7);
 }
-</code></pre><p>结果为：</p>
-<blockquote>
-<p>第一题的结果为：<br>0</p>
-<p>第二题的结果为：<br>Infinity</p>
-<p>第三题的结果为：<br>2.5</p>
-<p>第四题的结果为：<br>46</p>
-<p>第五题的结果为：<br>8</p>
-<p>第六题的结果为：<br>20</p>
-<p>第七题的结果为：<br>0<br>12345<br>12345</p>
-</blockquote>
+</code></pre><p>结果为：<br>    第一题的结果为：0<br>    第二题的结果为：Infinity<br>    第三题的结果为：2.5<br>    第四题的结果为：46<br>    第五题的结果为：8<br>    第六题的结果为：20<br>    第七题的结果为：<br>       0<br>       12345<br>       12345</p>
 <p>3． 写出以下程序的运行结果：（知识点：数据类型及分类、数据类型的转换）</p>
 <pre><code>public class Test {
 public static void main (String args[]) {
@@ -206,7 +198,7 @@ System.out.println(“d=” +d);
 </code></pre><p>运行结果为：</p>
 <pre><code>c=c-8
 d=-126
-</code></pre><p>容量大的数据类型转换为容量小的数据类型时，需要使用强制类型转换，在强制类型转换过程中，源类型的值可能大于目标类型，因此可能造成精度降低或溢出，使用时需注意</p>
+</code></pre><p>&#8195;&#8195;容量大的数据类型转换为容量小的数据类型时，需要使用强制类型转换，在强制类型转换过程中，源类型的值可能大于目标类型，因此可能造成精度降低或溢出，使用时需注意</p>
 <p>4．编写一个程序，求圆的面积，圆的半径由命令行参数输入。（知识点：变量和运算符综合应用、命令行参数配置）</p>
 <pre><code>double r = Double.parseDouble(args[0]);
 double s;
